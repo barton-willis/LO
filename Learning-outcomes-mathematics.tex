@@ -1,23 +1,57 @@
+\documentclass[6pt]{article}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{amsmath}
+\usepackage{epsfig}
+%\usepackage{amsym}
+\usepackage[]{hyperref}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.5in}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
+%\frenchspacing
+\usepackage[american]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{isomath}
+\usepackage{upgreek,amsmath}
+\usepackage{amssymb}
+\raggedright
+\usepackage{enumerate}
+\newenvironment{alphalist}{
+  \begin{enumerate}[(1)]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
 
+  \newenvironment{betalist}{
+  \begin{enumerate}[(a)]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\newcommand\AM{{\sc am}}
+\newcommand\PM{{\sc pm}}
+
+\usepackage{blindtext}
+\usepackage{multicol}
+
+\begin{document}
 \begin{flushleft}
 \textbf{Learning Outcomes for Mathematics and Statistics Classes} \\
 \vspace{0.1in}
 \emph{Approved by the Department of Mathematics and Statistics on XXX}
 \end{flushleft}
 
-\subsubsection*{Learning Outcomes for General Studies Mathematics & Statistics Classes (Loper 4)}
+\begin{multicols}{2}
+\subsubsection*{Learning Outcomes for General Studies Mathematics \& Statistics Classes (Loper 4)}
 
-Our General Studies classes are \textbf{MATH- 102} (College Algebra),
+Our General Studies classes are \textbf{MATH 102} (College Algebra),
 \textbf{MATH 103} (Plane Trigonometry),
 \textbf{MATH 106} (Mathematics for Liberal Arts),
 \textbf{MATH 115} (Calculus I with Analytic Geometry),
 \textbf{MATH 120} (Finite Mathematics),
 \textbf{MATH 123} (Applied Calculus I),
 \textbf{MATH 230} (Math for Elementary Teachers),
-\textbf{STAT 235} Introduction to  Statistics for  Social Sciences),
-and \textbf{STAT 241}  Elementary Statistics)
-
-The learning outcomes for these classes are:
+\textbf{STAT 235} (Introduction to  Statistics for  Social Sciences),
+and \textbf{STAT 241}  (Elementary Statistics). The learning outcomes for Loper 4  classes are:
 
 \begin{alphalist}
 \item Can describe problems using mathematical, statistical, or programming language
@@ -26,12 +60,11 @@ The learning outcomes for these classes are:
 \item Can interpret and express numerical data or graphical information using mathematical, statistical, or programming concepts and methods
 \end{alphalist}
 
-Learning Outcomes for undergraduate mathematics classes
-\subsubsection{MATH 90, Elementary Algebra}
+\subsubsection*{MATH 90, Elementary Algebra}
 
 Learning Outcomes:
 
-Chapter 1:
+\noindent Chapter 1:
 \begin{alphalist}
     \item Evaluate algebraic expressions
     \item Translate English phrases/sentences into algebraic expressions
@@ -61,7 +94,7 @@ Chapter 1:
     \item Use the order of operations agreement
     \item Evaluate mathematical models
 \end{alphalist}
-Chapter 2:
+\noindent Chapter 2:
  
 \begin{alphalist}
     \item Identify linear equations in one variable
@@ -79,7 +112,7 @@ Chapter 2:
     \item Solve problems involving the angles of a triangle
     \item Solve problems involving complementary and supplementary angles
 \end{alphalist}
-Chapter 3:
+\noindent Chapter 3:
  \begin{alphalist}
     \item Plot/find coordinates of points in the rectangular coordinate system
     \item Determine whether an ordered pair is a solution of an equation
@@ -99,7 +132,7 @@ Chapter 3:
     \item Use the point-slope form to write equations of a line
     \item Write linear equations that model data and make predictions
  \end{alphalist}
-Chapter 5:
+\noindent Chapter 5:
  \begin{alphalist}
     \item Understand the vocabulary used to describe polynomials
     \item Add and subtract polynomials
@@ -116,7 +149,7 @@ Chapter 5:
     \item Use the negative exponent rule
     \item Simplify exponential expressions
  \end{alphalist}
-Chapter 6:
+\noindent Chapter 6:
  \begin{alphalist}
     \item Find the greatest common factor and factor it out of a polynomial
     \item Factor by grouping
@@ -130,7 +163,7 @@ Chapter 6:
     \item Solve quadratic equations by factoring
     \item Solve problems using quadratic equations
  \end{alphalist}
-Chapter 7:
+\noindent Chapter 7:
  \begin{alphalist}
     \item Find numbers for which a rational expression is undefined
     \item Simplify rational expressions
@@ -142,7 +175,7 @@ Chapter 7:
     \item Solve rational equations
     \item Solve problems involving formulas with rational expressions
  \end{alphalist}
-Chapter 9:
+\noindent Chapter 9:
  \begin{alphalist}
     \item Solve quadratic equations using the square root property
     \item Solve problems using the Pythagorean Theorem
@@ -153,15 +186,10 @@ Chapter 9:
     \item Solve problems using quadratic equations
  \end{alphalist}
 
-
-MATH 101 – Intermediate Algebra 3 credit hours
-The course which includes a study of the properties of real numbers, polynomials, fundamental operations, factoring, exponents, and radicals, linear and quadratic equations, and other selected topics, all of which are necessary for the study of college algebra. Not a General Studies course.
-Prerequisite: MATH 090 or Math ACT Score of 17 or greater and one year of high school algebra Students may not enroll in MATH 101 after earning credit for any General Studies Mathematics class.
-
-\subsubsection{Learning Outcomes for MATH 101 (Intermediate Algebra)}
+\subsubsection*{Learning Outcomes for MATH 101 (Intermediate Algebra)}
 
 
-Chapter 1:
+\noindent Chapter 1:
 \begin{alphalist}
     \item Determine whether a number is a solution to a linear equation
     \item Solve linear equations using the properties of equality
@@ -173,8 +201,8 @@ Chapter 1:
     \item Solve application problems using formulas
     \item Use problem solving techniques to solve percent, investment, uniform motion, and mixture problems.
 \end{alphalist}
-Chapter 2:
-\end{alphalist}
+\noindent Chapter 2:
+\begin{alphalist}
     \item Plot ordered pairs and determine the coordinates of a point
     \item Read graphs and graph paired data
     \item Find the midpoint of a line segment
@@ -195,7 +223,7 @@ Chapter 2:
     \item Translate and reflect graphs of functions
 \end{alphalist}
  
-Chapter 4:
+\noindent Chapter 4:
 \begin{alphalist}
     \item Read and interpret inequality symbols
     \item Graph intervals and use interval and set-builder notation
@@ -210,7 +238,7 @@ Chapter 4:
     \item Graph compound inequalities
     \item Solve problems involving systems of linear inequalities
 \end{alphalist}
-Chapter 5:
+\noindent Chapter 5:
 \begin{alphalist}
     \item Identify bases and exponents
     \item Use the exponent rules to simplify expressions
@@ -225,7 +253,7 @@ Chapter 5:
     \item Factor by grouping
     \item Use factoring to solve formulas for a specific variable
     \item Factor perfect square trinomials
-    \item Factor trinomials in the form x^2 + bx + c and ax^2 + bx + c
+    \item Factor trinomials in the form $x^2 + bx + c$ and $ax^2 + bx + c$
     \item Use substitution to factor trinomials
     \item Use the grouping method to factor trinomials
     \item Factor the difference of two squares
@@ -234,7 +262,7 @@ Chapter 5:
     \item Use quadratic equations to solve problems
 \end{alphalist}
  
-Chapter 6:
+\noindent Chapter 6:
 \begin{alphalist}
     \item Define rational expressions and functions
     \item Evaluate rational functions
@@ -256,7 +284,7 @@ Chapter 6:
     \item Solve shared-work and uniform-motion problems
 \end{alphalist}
 
-Chapter 7:
+\noindent Chapter 7:
 \begin{alphalist}
     \item Find square, cube and nth roots
     \item Graph the square root and cube root functions
@@ -271,7 +299,7 @@ Chapter 7:
     \item Solve formulas containing radicals
     \item Use the Pythagorean Theorem to solve problems 
 \end{alphalist}
-Chapter 8:
+\noindent Chapter 8:
 \begin{alphalist}
     \item Use the square root property to solve quadratic equations
     \item Solve quadratic equations by completing the square
@@ -282,7 +310,7 @@ Chapter 8:
     \item Solve application problems using quadratic equations
     \item Find the vertex of a quadratic function using -b/2a
     \item Graph quadratic functions
-    \item Graph functions of the form f(x) = ax^2 + bx + c by completing the square
+    \item Graph functions of the form $f(x) = ax^2 + bx + c$ by completing the square
     \item Determine the minimum and maximum values of quadratic functions
     \item Solve quadratic equations graphically
     \item Solve quadratic inequalities
@@ -290,9 +318,8 @@ Chapter 8:
     \item Graph nonlinear inequalities in two variables
 \end{alphalist}
 
-Note: The online Math 101 course that was developed by the team is slightly different.
-It does all of chapter 1 rather than starting in section 1.5 as I have done here and eliminates all of chapter 4. 
-The following objectives cover sections \S 1.1 - \S 1.4.
+\noindent Note: The online MATH  101 course is slightly different. The online course does all of Chapter 1 rather than starting in \S 1.5 and
+it eliminates all of chapter 4.  For the online class, the following objectives cover sections \S 1.1 - \S 1.4.
  
 \begin{alphalist}
     \item Write verbal and mathematical models
@@ -313,10 +340,10 @@ The following objectives cover sections \S 1.1 - \S 1.4.
 
 
 
-\subsubsection{MATH 104  Concepts in Mathematics and Statistics}
+\subsubsection*{MATH 104  Concepts in Mathematics and Statistics}
 
 
-Upon completion of this course, students will be able to:
+On completion of this course, students will be able to:
 \begin{alphalist}
     \item Identify, write, and graph linear functions.
     \item Write, and graph quadratic functions.
@@ -330,13 +357,9 @@ Upon completion of this course, students will be able to:
 \end{alphalist}
 
 
-MATH 202 – Calculus II with Analytic Geometry 5 credit hours
-A continuation of MATH 115 including the differentiation and integration of transcendental functions, methods of formal integration with applications, series.
-Prerequisite: MATH 115 or Math ACT score of 25 or greater and one year of high school calculus.
+\subsubsection*{Learning Outcomes for MATH 202}
 
-\subsubectsion*{Learning Outcomes for MATH 202}
-
- Upon successful completion of this course, students will be able to 
+ On completion of this course, students will be able to:
  \begin{alphalist}
     \item use definite integrals to solve problems involving volume, arc length, surface area, work, and center of mass, 
     \item use integration by parts, trigonometric substitution, partial fractions to evaluate definite and indefinite integrals,
@@ -346,10 +369,10 @@ Prerequisite: MATH 115 or Math ACT score of 25 or greater and one year of high s
     \item use parametrizations and polar coordinates to find areas and arc lengths.
  \end{alphalist}
 
-\subsublist{MATH 250 Foundations of Math}
+\subsubsection*{MATH 250 Foundations of Math}
 
 
-On completion of MATH 250, students will 
+On of MATH 250, students will: 
 \begin{alphalist}
     \item gain an understanding of naïve set theory. 
     \item gain an understanding of symbolic logic, quantifiers, and functions.
@@ -361,7 +384,7 @@ On completion of MATH 250, students will
 \subsubsection*{MATH 251, Inquiry and Proof in 9-12 Mathematics}
 
 
-Upon completion of this course, students will be able to:
+On completion of this course, students will be able to:
 \begin{alphalist}
 \item Articulate and utilize mathematical practices essential for 9-12 mathematics.  
 \item Articulate the roles proof can play in secondary mathematics instruction.
@@ -374,21 +397,21 @@ Upon completion of this course, students will be able to:
 \subsubsection*{MATH 260, Calculus III}
 
 
-Upon completion of MATH 260,
+On completion of MATH 260, students will 
 \begin{alphalist} 
-    \item students will be able to use vectors to solve geometric problems and basic engineering statics problems.
-    \item students will understand the concept of partial derivatives and limits of multi-variable functions.
-    \item students will understand the concept of a parameterized curve and understand the concept of curvature.
-    \item students will be able to use partial derivatives to solve multi-variable optimization problems.
-    \item students will understand the concept of a line integral and apply to basic physics problems involving energy and work.
-    \item students will be able to set up and evaluate multiple integrals using Cartesian, polar, and spherical coordinates to find volumes, surface areas, centroids, and moments of inertia.
-    \item students will understand the concepts of the vector divergence, gradient, and curl in three-dimensional space.
-    \item students will understand the Green theorem and the Divergence theorem and be able to apply these concepts to problems involving surface and line integrals.
+    \item be able to use vectors to solve geometric problems and basic engineering statics problems.
+    \item understand the concept of partial derivatives and limits of multi-variable functions.
+    \item understand the concept of a parameterized curve and understand the concept of curvature.
+    \item will be able to use partial derivatives to solve multi-variable optimization problems.
+    \item will understand the concept of a line integral and apply to basic physics problems involving energy and work.
+    \item be able to set up and evaluate multiple integrals using Cartesian, polar, and spherical coordinates to find volumes, surface areas, centroids, and moments of inertia.
+    \item understand the concepts of the vector divergence, gradient, and curl in three-dimensional space.
+    \item understand the Green theorem and the Divergence theorem and be able to apply these concepts to problems involving surface and line integrals.
 \end{alphalist}
 
 \subsubsection*{MATH 270, Methods in Middle and High School Mathematics Teaching I     2 credit hours}
 
-Upon completion of this course, students will be able to
+ON completion of this course, students will be able to:
 \begin{alphalist}
 
 \item Thoroughly describe what is meant by “doing,”  “teaching,”  and “learning” mathematics in their own words and with the support of mathematics educational research.
@@ -404,7 +427,7 @@ Upon completion of this course, students will be able to
 
 \subsubsection*{MATH 271, Field Experience in Middle and High School Mathematics I}
 
-Upon completion of this course, students will be able to:
+oN completion of this course, students will be able to:
 \begin{alphalist}
 \item Identify research-based mathematics teaching practices that are included in the classroom, as well as how they could be incorporated
 \item Engage 6-12 students in developmentally appropriate mathematical activities 
@@ -425,15 +448,15 @@ Upon completion of this course, students will be able to:
 \end{betalist}
 \end{alphalist}
 
-\subsubsetion*{MATH 280, Linear Algebra}
+\subsubsection*{MATH 280, Linear Algebra}
 
 
 
 \subsubsection*{MATH 300, Tutoring in Mathematics}
 
-\subsubection*{MATH 305, Differential Equations}
+\subsubsection*{MATH 305, Differential Equations}
 
-On completion of MATH 305, students will 
+On completion of MATH 305, students will: 
 \begin{alphalist}
     \item Know the classical methods for solving first order differential equations (ODEs).
     \item Be able to Set up and solve applied problems involving 1st order ODEs.
@@ -444,7 +467,7 @@ On completion of MATH 305, students will
 
 \subsubsection*{MATH 310, College Geometry}
 
-Upon successful completion of this course, students will be able to
+On completion of this course, students will be able to
 \begin{alphalist}
     \item understand the basic definitions, axioms, and important theorems in neutral geometry,
     \item compare Euclidean geometry, hyperbolic geometry, and elliptical geometry,
@@ -453,9 +476,9 @@ Upon successful completion of this course, students will be able to
     \item explain geometric concepts and results in concrete models.
 \end{alphalist}
 
-\subsubsection({MATH 330, Math for Elementary Teachers II}
+\subsubsection*{MATH 330, Math for Elementary Teachers II}
 
-Upon completion of this course, students will be able to: 
+On completion of this course, students will be able to: 
 \begin{alphalist}
 \item Explain and perform operations with fractions and decimals. 
 \item Apply understanding of ratios, percentages, and proportions to real-life situations. 
@@ -469,7 +492,7 @@ Upon completion of this course, students will be able to:
 
 \subsubsection*{MATH 365, Complex Analysis}
 
-Upon completion, students will 
+Upon completion of this course, students will 
 \begin{alphalist}
     \item  be able to represent complex numbers algebraically and geometrically.
     \item be able to use the definition of the limit to prove that a function has a limit.
@@ -478,7 +501,7 @@ Upon completion, students will
     \item be able to use the Cauchy-Riemann equations to determine if a function is analyic.
     \item be able to represent functions using Laurent series and power series and be able to find function residues, poles, and pole order.
     \item be able to evaluate contour integrals using the residues.
-    \item Understand Cauchy’s integral formulas and their consequences,  including the fundamental theorem of algebra.
+    \item understand Cauchy’s integral formulas and their consequences,  including the fundamental theorem of algebra.
 \end{alphalist}
 
 
@@ -490,16 +513,16 @@ Upon completion, students will
 
 \subsubsection*{MATH 400, History of Mathematics}
 
-On completion of MATH 400, students will 
+On completion of this course, students will 
 \begin{alphalist}
     \item understand the progression of mathematics through history.
-    \item understanding of the history of a variety of mathematical topics.
+    \item understand the history of a variety of mathematical topics.
     \item gain an understanding of several mathematicians through history.
 \end{alphalist}
 
-\subsubection*{MATH 404, Theory of Numbers}
+\subsubsection*{MATH 404, Theory of Numbers}
 
-Upon successful completion of this course, students will be able to:
+On completion of this course, students will be able to:
 \begin{alphalist}
     \item explain the concepts of divisibility, prime number, and congruence, 
     \item calculate the great common divisor using the Euclidean algorithm and prime factorization, 
@@ -521,7 +544,7 @@ On completion of MATH 413, students will
 
 \subsubsection*{MATH 420, Numerical Analysis}
 
-On completion of MATH 420, students will
+On completion of this course, students will
 \begin{alphalist}
     \item understand IEEE arithmetic and know the rules for accurate computation.
     \item be able to determine the time complexity of basic algorithms.
@@ -530,10 +553,9 @@ On completion of MATH 420, students will
     \item be able to use software tools, including graphical tools, to use these algorithms to solve problems numerically.
 \end{alphalist}
 
-\subsubection*{MATH 430,  Middle School Mathematics}
+\subsubsection*{MATH 430,  Middle School Mathematics}
 
 Upon completion of this course, students will be able to: 
-
 \begin{alphalist}
 \item Conceptualize the real number system, including rational and irrational numbers 
 \item Explain algebraic procedures (i.e. solving equations/inequalities, laws of exponents) 
@@ -556,7 +578,7 @@ Upon completion of this course, students will be able to:
 
 \subsubsection*{MATH 460, Advanced Calculus I}
 
-On completion of MATH 460, students will
+On completion of this class, students will
 \begin{alphalist}
     \item be able to prove basic propositions that involve the fundamentals of point set topology, including the concepts of open sets, closed sets, boundary points, limit points, and the set supremum and infimum. 
     \item demonstrate competence with basic properties of sequences including determining convergence and proving results involving the sum, difference, product, and quotient of sequences
@@ -568,7 +590,7 @@ On completion of MATH 460, students will
 
 \subsubsection*{MATH 465, Advanced Study in 9-12 Mathematics}
 
-Upon completion of this course, students will be able to:
+On  completion of this course, students will be able to:
 \begin{alphalist}
 
 \item Connect higher level content knowledge to essential content in secondary mathematics
@@ -581,7 +603,7 @@ Upon completion of this course, students will be able to:
 
 \subsubsection*{MATH 470, Methods in Middle and High School Mathematics Teaching II}
 
-Upon completion of this course, students will be able to:
+On completion of this course, students will be able to:
 \begin{alphalist}
 \item Develop effective unit and lessons that support district, state and national standards and are developmentally appropriate.
 \item Incorporate various forms of communication and connections (including within the subject area, to other disciplines and to real life) into lessons.
@@ -595,9 +617,9 @@ Upon completion of this course, students will be able to:
 \item Be reflective of own learning and realize how his/her own understanding influences student learning.
 \end{alphalist}
 
-\subsubsection{MATH 471, Field Experience in Middle and High School Mathematics II}
+\subsubsection*{MATH 471, Field Experience in Middle and High School Mathematics II}
 
-COURSE OBJECTIVES:Students will:
+On completion of this course, students will:
 \begin{alphalist}
 \item Utilize research-based mathematics teaching practices in the classroom
 \item Engage 6-12 students in developmentally appropriate mathematics lessons
@@ -647,6 +669,7 @@ The learning outcomes for MATH 496 vary by the course content.
 
 The learning outcomes for STAT 495 vary by the course content.
 
+\end{multicols}
 \end{document}
 
 
