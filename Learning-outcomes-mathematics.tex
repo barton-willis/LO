@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
-\usepackage[letterpaper, margin=0.5in]{geometry}
+\usepackage[letterpaper, margin=0.75in]{geometry}
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
 \frenchspacing
 \usepackage[american]{babel}
@@ -8,16 +8,31 @@
 \usepackage{utopia} %https://www.unk.edu/ccr/marketing-advertising/branding-and-identity-marks/typefaces.php
 \usepackage{isomath}
 \usepackage{upgreek}
-\usepackage{enumerate}
-\newenvironment{alphalist}{
-  \begin{enumerate}[(1)]
-    \addtolength{\itemsep}{-1.25\itemsep}}
-  {\end{enumerate}}
+%\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{enumitem}
 
-  \newenvironment{betalist}{
-  \begin{enumerate}[(a)]
-    \addtolength{\itemsep}{-1.25\itemsep}}
-  {\end{enumerate}}
+\newenvironment{alphalist}{
+\begin{enumerate}[label=(\arabic*),widest=107 ,leftmargin=10pt, itemsep=0pt]}
+{\end{enumerate}}
+
+\newenvironment{betalist}{
+\begin{enumerate}[label=(\alph*),widest=zzz,leftmargin=20pt,itemsep=0pt]}
+{\end{enumerate}}
+
+%\newenvironment{betalist}{
+%\begin{enumerate}[label=(\arabic*),widest=27,itemindent=*,leftmargin=0pt]}
+%{\end{enumerate}}
+
+%\newenvironment{alphalist}{
+ % \begin{enumerate}[(1)]
+ %   \addtolength{\itemsep}{-1.25\itemsep}}
+ % {\end{enumerate}}
+
+ % \newenvironment{betalist}{
+ % \begin{enumerate}[(a)]
+ %   \addtolength{\itemsep}{-1.25\itemsep}}
+%  {\end{enumerate}}
 
 \newcommand\AM{a.m.} %https://www.unk.edu/ccr/news-internal-communication/writing-style-guide.php
 \newcommand\PM{p.m.}
@@ -339,7 +354,7 @@ it eliminates all of chapter 4.  For the online class, the following objectives 
 On completion of this course, students will be able to:
 \begin{alphalist}
     \item Identify, write, and graph linear functions.
-    \item Write, and graph quadratic functions.
+    \item Write and graph quadratic functions.
     \item Solve linear and quadratic equations and inequalities.
     \item Solve two-variable systems of linear equations.
     \item Determine probabilities for independent events.
@@ -356,7 +371,7 @@ On completion of this course, students will be able to:
  \begin{alphalist}
     \item use definite integrals to solve problems involving volume, arc length, surface area, work, and center of mass. 
     \item use integration by parts, trigonometric substitution, and partial fractions to evaluate definite and indefinite integrals.
-    \item apply the concepts of limits, convergence, and divergence to evaluate some classes of improper integrals.
+    \item apply the concepts of limits, convergence, and divergence to evaluate improper integrals.
     \item determine convergence or divergence of sequences and series.
     \item use Taylor and MacLaurin series to represent functions and integrate functions.
     \item use parametrizations and polar coordinates to find areas and arc lengths.
@@ -371,7 +386,7 @@ On completion of this course, students will
     \item gain an understanding of symbolic logic, quantifiers, and functions.
     \item gain an understanding of direct proofs, proofs by contrapositive, and proofs by induction.
     \item gain the ability to read and understand mathematical proofs.
-    \item gain the problem-solving skills that needed to create a mathematical proof.
+    \item gain the problem solving skills that needed to create a mathematical proof.
 \end{alphalist}
 
 \subsubsection*{MATH 251, Inquiry and Proof in 9-12 Mathematics}
@@ -396,7 +411,7 @@ On completion of this course, students will
     \item understand the concept of partial derivatives and limits of multi-variable functions.
     \item understand the concept of a parameterized curve and understand the concept of curvature.
     \item will be able to use partial derivatives to solve multi-variable optimization problems.
-    \item will understand the concept of a line integral and apply to basic physics problems involving energy and work.
+    \item will understand the concept of a line integral and apply it to basic physics problems involving energy and work.
     \item be able to set up and evaluate multiple integrals using Cartesian, polar, and spherical coordinates to find volumes, surface areas, centroids, and moments of inertia.
     \item understand the concepts of the vector divergence, gradient, and curl in three-dimensional space.
     \item understand the Green theorem and the Divergence theorem and be able to apply these concepts to problems involving surface and line integrals.
@@ -474,7 +489,7 @@ On completion of this course, students will be able to:
 \item Explain and perform operations with fractions and decimals. 
 \item Apply understanding of ratios, percentages, and proportions to real-life situations. 
 \item Identify, categorize, compare and contrast various shapes and solids. 
-\item Determine the area, surface area, and volume of two- and three-dimensional objects. 
+\item Determine the area, surface area, and volume of two and three-dimensional objects. 
 \item Approach mathematics problems using a variety of methods. 
 \item Explain mathematical concepts to students at their level of understanding.
 \end{alphalist}
@@ -490,8 +505,8 @@ Upon completion of this course, students will
     \item be able to find derivatives of complex valued functions from the limit definition.
     \item understand the connection between the complex exponential and the trigonometric functions and be able to prove trigonometric identities using these connections.
     \item be able to use the Cauchy-Riemann equations to determine if a function is analytic.
-    \item be able to represent functions using Laurent series and power series and be able to find function residues, poles, and pole order.
-    \item be able to evaluate contour integrals using the residues.
+    \item be able to represent functions using Laurent and power series and be able to find function residues, poles, and pole order.
+    \item be able to evaluate contour integrals using residues.
     \item understand the Cauchy integral formula and its consequences,  including the fundamental theorem of algebra.
 \end{alphalist}
 
@@ -571,10 +586,11 @@ Upon completion of this course, students will be able to:
 
 On completion of this class, students will
 \begin{alphalist}
-    \item be able to prove basic propositions that involve the fundamentals of point set topology, including the concepts of open sets, closed sets, boundary points, limit points, and the set supremum and infimum. 
+    \item be able to prove basic propositions that involve the fundamentals of point set topology, including the concepts of open sets, closed sets, boundary points, and limit points.
+     \item be able to prove basic propositions that involve the concept of the supremum and infimum. 
     \item demonstrate competence with basic properties of sequences including determining convergence and proving results involving the sum, difference, product, and quotient of sequences.
     \item be able to use the definitions of continuity, the limit, and the derivative to prove basic propositions involving these concepts as well as be able to prove facts about specific functions.
-    \item demonstrate the ability to use the Mean Value Theorem to prove other theorems. 
+    \item demonstrate the ability to use the Mean Value Theorem to prove theorems. 
     \item be able to define and evaluate the lower, upper, and general Riemann sums.
     \item demonstrate a solid understanding of the fundamental theorem of calculus.
 \end{alphalist}
